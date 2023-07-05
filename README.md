@@ -2,9 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
 
+Do not directly use the angular CLI (unless environment variables are created), since environment variables are created based on the .env
+
+## Steps:
+  - Clone the .env.template and rename it to .env
+  - Add the environment variables
+  - Create Angular Envs (optional)
+  ```
+  npm run envs
+  ```
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server or `npm run start` to create the .env file and start a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -12,7 +22,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project or `npm run build` to create the .env file and build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
